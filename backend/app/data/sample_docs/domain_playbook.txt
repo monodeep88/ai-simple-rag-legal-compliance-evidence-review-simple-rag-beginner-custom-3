@@ -1,0 +1,1 @@
+Legal Compliance Evidence Review Simple RAG - Beginner Custom 3 playbook. Capture the request, check required facts, cite supporting material, and recommend the next action.
