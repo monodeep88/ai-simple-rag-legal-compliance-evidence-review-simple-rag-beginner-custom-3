@@ -1,0 +1,84 @@
+{
+  "mode": "template",
+  "project_title": "Legal Compliance Evidence Review Simple RAG - Beginner Custom 3 - Beginner Simple RAG",
+  "short_description": "Template-generated Beginner Simple RAG project. It is complete, runnable, tested, and can be upgraded with real AI provider keys.",
+  "domain_summary": "A practical Legal Compliance Evidence Review Simple RAG - Beginner Custom 3 assistant tailored for Simple RAG workflows.",
+  "user_persona": "Operations user who needs source-grounded answers, checklists, and clear next actions.",
+  "architecture_notes": [
+    "Deterministic full-stack template used for reliability.",
+    "FastAPI backend and React frontend are generated before GitHub push.",
+    "RAG/vector/agent flow is implemented locally with ChromaDB-ready fallback code."
+  ],
+  "backend_modules": [
+    "main.py",
+    "schemas.py",
+    "db.py",
+    "services/text.py",
+    "services/vector_store.py",
+    "services/pipeline.py"
+  ],
+  "frontend_features": [
+    "question form",
+    "answer panel",
+    "sources",
+    "agent timeline",
+    "error state"
+  ],
+  "data_sources": [
+    "sample documents",
+    "sample CSV tool data"
+  ],
+  "testing_strategy": [
+    "pytest contract tests",
+    "pipeline test",
+    "tool test",
+    "full-stack file existence test"
+  ],
+  "starter_questions": [
+    "What should I know first about Legal Compliance Evidence Review Simple RAG - Beginner Custom 3?",
+    "What policy or evidence supports the recommended next step?",
+    "Create a checklist for handling this request."
+  ],
+  "workflow_steps": [
+    "Classify the request",
+    "Retrieve the most relevant source documents",
+    "Apply domain-specific business rules",
+    "Return a cited answer with next actions"
+  ],
+  "business_rules": [
+    "Always cite source documents when retrieved context is used.",
+    "Escalate unclear, high-risk, or missing-data cases to a human reviewer.",
+    "Prefer concise next actions over generic advice."
+  ],
+  "sample_documents": [
+    {
+      "filename": "domain_playbook.txt",
+      "content": "Legal Compliance Evidence Review Simple RAG - Beginner Custom 3 playbook. Capture the request, check required facts, cite supporting material, and recommend the next action."
+    },
+    {
+      "filename": "operating_policy.txt",
+      "content": "Requests should be acknowledged quickly, reviewed against policy, and escalated when required details are missing."
+    },
+    {
+      "filename": "tool_catalog.csv",
+      "content": "tool,description\ncalculator,Use for numeric checks\ndocument_search,Use for source-grounded answers\nchecklist,Use for operational next actions\n"
+    }
+  ],
+  "tool_catalog": [
+    {
+      "name": "document_search",
+      "description": "Find relevant cited context."
+    },
+    {
+      "name": "checklist",
+      "description": "Create an operational checklist."
+    },
+    {
+      "name": "calculator",
+      "description": "Run safe arithmetic checks."
+    }
+  ],
+  "model_provider": "template",
+  "model_name": "template",
+  "fallback_reason": "All AI providers are currently unavailable. Please try again later."
+}
